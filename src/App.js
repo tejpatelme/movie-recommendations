@@ -63,10 +63,18 @@ var movieDB = {
   ]
 };
 
+var genres = Object.keys(movieDB);
+
 export default function App() {
   return (
     <div className="App">
       <h1>🎥My Movie Recommendations</h1>
+      <h2>Click on any genre</h2>
+      <ul>
+        {genres.map((genre) => {
+          return <li>genre</li>;
+        })}
+      </ul>
     </div>
   );
 }
