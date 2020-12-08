@@ -70,11 +70,13 @@ export default function App() {
     <div className="App">
       <h1>🎥My Movie Recommendations</h1>
       <h2>Click on any genre</h2>
-      <ul>
-        {genres.map((genre) => {
-          return <li>genre</li>;
-        })}
-      </ul>
+      <div className="genreDiv">
+        <ul>
+          {genres.map((genre) => {
+            return <li>{genre}</li>;
+          })}
+        </ul>
+      </div>
     </div>
   );
 }
