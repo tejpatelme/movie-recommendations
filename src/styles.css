@@ -4,6 +4,11 @@
   font-family: "Poppins", sans-serif;
   text-align: center;
 }
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: var(--background-color);
 }
@@ -15,9 +20,13 @@ body {
   --chip-color: #4f4f4f;
 }
 
-hr {
+.hr {
+  height: 2px;
+  background-color: var(--secondary-color);
   color: var(--secondary-color);
   width: 60%;
+  margin: auto;
+  border-radius: 4px;
 }
 
 h1 {
@@ -30,7 +39,8 @@ h1 span {
 }
 
 h2 {
-  font-weight: 600;
+  font-size: 1.3em;
+  font-weight: 400;
   color: var(--secondary-color);
 }
 

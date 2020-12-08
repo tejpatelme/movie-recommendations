@@ -95,7 +95,7 @@ export default function App() {
       <h1>
         🍿<span>My</span> Movie Recommendations🍿
       </h1>
-      <hr></hr>
+      <div className="hr"></div>
       <h2>Click on any genre👇</h2>
       <div className="genreDiv">
         {genres.map((genre) => {
@@ -106,7 +106,7 @@ export default function App() {
           );
         })}
       </div>
-      <hr></hr>
+      <div className="hr"></div>
       <br />
       <div className="listDiv">
         <ul>
