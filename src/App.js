@@ -74,8 +74,11 @@ export default function App() {
 
   return (
     <div className="App">
-      <h1>🎥My Movie Recommendations</h1>
-      <h2>Click on any genre</h2>
+      <h1>
+        🍿<span>My</span> Movie Recommendations🍿
+      </h1>
+      <hr></hr>
+      <h2>Click on any genre👇</h2>
       <div className="genreDiv">
         <ul>
           {genres.map((genre) => {
@@ -87,14 +90,15 @@ export default function App() {
           })}
         </ul>
       </div>
-
+      <hr></hr>
+      <br />
       <div className="listDiv">
         <ul>
           {movieDB[selectedGenre].map((details) => (
-            <li>
-              <div>{details.title}</div>
-              <div>{details.cast}</div>
-              <div>{details.rating}</div>
+            <li key={details.title}>
+              <div className="title">{details.title}</div>
+              <div className="cast">{details.cast}</div>
+              <div className="rating">{details.rating}</div>
             </li>
           ))}
         </ul>

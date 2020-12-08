@@ -1,8 +1,37 @@
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,800;1,700&display=swap");
 
 .App {
-  font-family: "Quicksand", sans-serif;
+  font-family: "Poppins", sans-serif;
   text-align: center;
+}
+body {
+  background-color: var(--background-color);
+}
+
+:root {
+  --background-color: #0d0d0d;
+  --secondary-color: #818181;
+  --rating-color: #c1ae00;
+  --chip-color: #4f4f4f;
+}
+
+hr {
+  color: var(--secondary-color);
+  width: 60%;
+}
+
+h1 {
+  font-weight: 400;
+  color: white;
+}
+
+h1 span {
+  font-weight: 700;
+}
+
+h2 {
+  font-weight: 600;
+  color: var(--secondary-color);
 }
 
 .genreDiv ul {
@@ -13,25 +42,46 @@
 .genreDiv li {
   cursor: pointer;
   display: inline-block;
-  padding: 0.5rem;
-  border: 1px solid black;
-  border-radius: 6px;
-  margin: 0px 8px 8px 0px;
-}
-
-.listDiv {
-  max-width: 600px;
-  margin: auto;
+  padding: 1rem;
+  background-color: var(--chip-color);
+  font-size: 18px;
+  border-radius: 20px;
+  margin: 0px 16px 16px 0px;
+  color: white;
 }
 
 .listDiv ul {
   list-style: none;
   text-align: left;
+  max-width: 600px;
+  margin: auto;
   padding: 0px;
 }
+
 .listDiv li {
-  display: block;
-  padding: 0.5rem;
-  border: 1px solid black;
+  background-color: #171717;
+  border-radius: 1rem;
+  padding: 1rem;
   margin-bottom: 0.75rem;
+}
+
+.listDiv .title {
+  font-size: 18px;
+  color: white;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 0.75rem;
+}
+
+.listDiv .cast {
+  font-weight: 400;
+  color: var(--secondary-color);
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.listDiv .rating {
+  color: #c1ae00;
+  font-weight: 600;
+  text-align: center;
 }
