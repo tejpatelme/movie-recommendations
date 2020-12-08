@@ -80,15 +80,13 @@ export default function App() {
       <hr></hr>
       <h2>Click on any genre👇</h2>
       <div className="genreDiv">
-        <ul>
-          {genres.map((genre) => {
-            return (
-              <li key={genre} onClick={() => genreClickHandler(genre)}>
-                {genre}
-              </li>
-            );
-          })}
-        </ul>
+        {genres.map((genre) => {
+          return (
+            <button key={genre} onClick={() => genreClickHandler(genre)}>
+              {genre}
+            </button>
+          );
+        })}
       </div>
       <hr></hr>
       <br />

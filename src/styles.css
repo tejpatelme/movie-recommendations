@@ -34,16 +34,12 @@ h2 {
   color: var(--secondary-color);
 }
 
-.genreDiv ul {
-  padding: 0px;
-  list-style: none;
-}
-
-.genreDiv li {
+.genreDiv button {
+  font-family: inherit;
   cursor: pointer;
-  display: inline-block;
   padding: 1rem;
   background-color: var(--chip-color);
+  border: none;
   font-size: 18px;
   border-radius: 20px;
   margin: 0px 16px 16px 0px;
