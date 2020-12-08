@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./styles.css";
 
 var movieDB = {
-  Drama: [
+  drama: [
     {
       title: "The Shawshank Redemption",
       cast: "Tim Robbins, Morgan Freeman, Bob Gunton",
@@ -22,7 +22,7 @@ var movieDB = {
     }
   ],
 
-  Biography: [
+  biography: [
     {
       title: "Catch Me If You Can",
       cast: "Leonardo DiCaprio, Tom Hanks, Christopher Walken",
@@ -42,7 +42,7 @@ var movieDB = {
     }
   ],
 
-  Mystery: [
+  mystery: [
     {
       title: "Shutter Island",
       cast: "Leonardo DiCaprio, Emily Mortimer, Mark Ruffalo",
@@ -66,7 +66,7 @@ var movieDB = {
 var genres = Object.keys(movieDB);
 
 export default function App() {
-  const [selectedGenre, setSelectedGenre] = useState("Drama");
+  const [selectedGenre, setSelectedGenre] = useState("drama");
 
   function genreClickHandler(genre) {
     setSelectedGenre(genre);
