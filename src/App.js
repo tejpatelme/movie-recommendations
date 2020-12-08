@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./styles.css";
 
 var movieDB = {
@@ -6,19 +6,19 @@ var movieDB = {
     {
       title: "The Shawshank Redemption",
       cast: "Tim Robbins, Morgan Freeman, Bob Gunton",
-      rating: 9.5 / 10
+      rating: "9.5 / 10"
     },
 
     {
       title: "Good Will Hunting (1997)",
       cast: "Robin Williams, Matt Damon, Ben Affleck",
-      rating: 9.9 / 10
+      rating: "9.9 / 10"
     },
 
     {
       title: "Forrest Gump (1994)",
       cast: "Tom Hanks, Robin Wright, Gary Sinise",
-      rating: 9.7 / 10
+      rating: "9.7 / 10"
     }
   ],
 
@@ -26,19 +26,19 @@ var movieDB = {
     {
       title: "Catch Me If You Can",
       cast: "Leonardo DiCaprio, Tom Hanks, Christopher Walken",
-      rating: 9.5 / 10
+      rating: "9.5 / 10"
     },
 
     {
       title: "The Imitation Game",
       cast: "Benedict Cumberbatch, Keira Knightley, Matthew Goode",
-      rating: 8.3 / 10
+      rating: "8.3 / 10"
     },
 
     {
       title: "Lone Survivor",
       cast: "Mark Wahlberg, Taylor Kitsch, Emile Hirsch",
-      rating: 8.6 / 10
+      rating: "8.6 / 10"
     }
   ],
 
@@ -46,19 +46,19 @@ var movieDB = {
     {
       title: "Shutter Island",
       cast: "Leonardo DiCaprio, Emily Mortimer, Mark Ruffalo",
-      rating: 8.5 / 10
+      rating: "8.5 / 10"
     },
 
     {
       title: "The Girl with the Dragon Tattoo",
       cast: "Daniel Craig, Rooney Mara, Christopher Plummer",
-      rating: 9.0 / 10
+      rating: "9.0 / 10"
     },
 
     {
       title: "The Bourne Identity",
       cast: "Franka Potente, Matt Damon, Chris Cooper",
-      rating: 8.0 / 10
+      rating: "8.0 / 10"
     }
   ]
 };
@@ -66,6 +66,12 @@ var movieDB = {
 var genres = Object.keys(movieDB);
 
 export default function App() {
+  const [selectedGenre, setSelectedGenre] = useState("Drama");
+
+  function genreClickHandler(genre) {
+    setSelectedGenre(genre);
+  }
+
   return (
     <div className="App">
       <h1>🎥My Movie Recommendations</h1>
@@ -73,8 +79,24 @@ export default function App() {
       <div className="genreDiv">
         <ul>
           {genres.map((genre) => {
-            return <li>{genre}</li>;
+            return (
+              <li key={genre} onClick={() => genreClickHandler(genre)}>
+                {genre}
+              </li>
+            );
           })}
+        </ul>
+      </div>
+
+      <div className="listDiv">
+        <ul>
+          {movieDB[selectedGenre].map((details) => (
+            <li>
+              <div>{details.title}</div>
+              <div>{details.cast}</div>
+              <div>{details.rating}</div>
+            </li>
+          ))}
         </ul>
       </div>
     </div>
