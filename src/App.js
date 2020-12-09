@@ -85,6 +85,40 @@ var movieDB = {
       cast: "Franka Potente, Matt Damon, Chris Cooper",
       rating: "8.0 / 10"
     }
+  ],
+
+  "sci-fi": [
+    {
+      title: "Inception",
+      image:
+        "https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_UX182_CR0,0,182,268_AL__QL50.jpg",
+      cast: "Leonardo DiCaprio, Joseph Gordon-Levitt, Elliot Page",
+      rating: "10 / 10"
+    },
+
+    {
+      title: "Interstellar",
+      image:
+        "https://m.media-amazon.com/images/M/MV5BZjdkOTU3MDktN2IxOS00OGEyLWFmMjktY2FiMmZkNWIyODZiXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UX182_CR0,0,182,268_AL__QL50.jpg",
+      cast: "Matthew McConaughey, Anne Hathaway, Jessica Chastain",
+      rating: "9.5 / 10"
+    },
+
+    {
+      title: "The Matrix",
+      image:
+        "https://m.media-amazon.com/images/M/MV5BNzQzOTk3OTAtNDQ0Zi00ZTVkLWI0MTEtMDllZjNkYzNjNTc4L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UX182_CR0,0,182,268_AL__QL50.jpg",
+      cast: "Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss",
+      rating: "8.9 / 10"
+    },
+
+    {
+      title: "Edge of Tomorrow",
+      image:
+        "https://m.media-amazon.com/images/M/MV5BMTc5OTk4MTM3M15BMl5BanBnXkFtZTgwODcxNjg3MDE@._V1_UX182_CR0,0,182,268_AL__QL50.jpg",
+      cast: "Tom Cruise, Emily Blunt, Bill Paxton",
+      rating: "8.6 / 10"
+    }
   ]
 };
 
