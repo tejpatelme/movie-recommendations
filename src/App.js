@@ -25,6 +25,13 @@ var movieDB = {
         "https://m.media-amazon.com/images/M/MV5BNWIwODRlZTUtY2U3ZS00Yzg1LWJhNzYtMmZiYmEyNmU1NjMzXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UY268_CR1,0,182,268_AL__QL50.jpg",
       cast: "Tom Hanks, Robin Wright, Gary Sinise",
       rating: "9.7 / 10"
+    },
+    {
+      title: "Dead Poets Society",
+      image:
+        "https://m.media-amazon.com/images/M/MV5BOGYwYWNjMzgtNGU4ZC00NWQ2LWEwZjUtMzE1Zjc3NjY3YTU1XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UX182_CR0,0,182,268_AL__QL50.jpg",
+      cast: "Robin Williams, Robert Sean Leonard, Ethan Hawke",
+      rating: "8.5 / 10"
     }
   ],
 
